@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ХАСКИ</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= ЗАСТАВКА ================= -->
+
+  <div class="intro" id="intro">
+
+    <div class="intro-noise"></div>
+
+    <div class="intro-corner intro-left">П</div>
+    <div class="intro-corner intro-right">РУ</div>
+
+    <div class="portrait-wrap">
+      <div class="red-ring"></div>
+
+      <img
+        src="images/husky-start.jpg"
+        alt="Хаски"
+        class="intro-image"
+      >
+    </div>
+
+    <div class="intro-title">ХАСКИ</div>
+
+    <div class="intro-line"></div>
+
+  </div>
+
+
+  <!-- ================= САЙТ ================= -->
+
+  <main class="site" id="site">
+
+    <!-- ШАПКА -->
+
+    <header class="header">
+
+      <a href="#" class="logo">
+        ХАСКИ
+      </a>
+
+      <nav>
+
+        <a href="#bio">БИОГРАФИЯ</a>
+
+        <a href="#music">МУЗЫКА</a>
+
+        <a href="#film">КОММЕРСАНТ</a>
+
+        <a href="#gallery">ГАЛЕРЕЯ</a>
+
+      </nav>
+
+    </header>
+
+
+    <!-- ================= ГЛАВНЫЙ ЭКРАН ================= -->
+
+    <section class="hero">
+
+      <div class="hero-lines"></div>
+
+      <p class="small-label">
+        ДМИТРИЙ КУЗНЕЦОВ
+      </p>
+
+      <h1>
+        ХАСКИ
+      </h1>
+
+      <p class="hero-text">
+        СЛОВО. ЗВУК. ОБРАЗ.
+      </p>
+
+      <a href="#bio" class="enter-btn">
+        ВОЙТИ В ИСТОРИЮ
+      </a>
+
+    </section>
+
+
+    <section class="section bio" id="bio">
+
+      <div class="section-number">
+        01
+      </div>
+
+      <div class="section-content">
+
+        <p class="eyebrow">
+          БИОГРАФИЯ
+        </p>
+
+        <h2>
+          ЧЕЛОВЕК<br>
+          <span>И ТЕКСТ</span>
+        </h2>
+
+
+        <div class="bio-grid">
+
+          <!-- ФОТО -->
+
+          <div class="photo-frame">
+
+            <img
+              src="images/husky-bio.jpg"
+              alt="Хаски"
+            >
+
+          </div>
+
+
+          <!-- ТЕКСТ -->
+
+          <div class="text">
+
+            <p>
+              Родился 10 февраля 1993 года в Иркутске,
+              но в трёхмесячном возрасте семья переехала
+              в Бурятию. В школе увлекался классической
+              литературой.
+            </p>
+
+            <p>
+              В 15 лет увлёкся рэпом, вдохновившись
+              творчеством групп «Каста» и «Многоточие»,
+              и начал сам писать тексты.
+            </p>
+
+            <p>
+              В 2017 году дебютировал как режиссёр
+              с короткометражным фильмом «Психотроника»
+              (стал одним из пяти первых фильмов
+              «Медиалаборатории» «Яндекс.Такси»).
+            </p>
+
+            <p>
+              Также снимался в кино:
+              «Хрусталь» (2018),
+              «Петровы в гриппе» (2021),
+              «Казнь» (2021).
+            </p>
+
+            <p>
+              В 2022 году выпустил документальный фильм
+              «ЧВК Филармония. Музыканты на войне».
+            </p>
+
+            <p>
+              Псевдоним «Хаски» выбрал, объясняя это так:
+              «Собака — способ уйти от своей личности.
+              Я мог бы быть и человеком-кошкой, в конце
+              концов смысл в том, чтобы выразить себя
+              через нечеловеческий образ».
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= МУЗЫКА ================= -->
+
+   <section class="section music" id="music">
+  <div class="section-number">02</div>
+
+  <div class="section-content">
+
+    <p class="eyebrow">МУЗЫКА</p>
+
+    <h2>НОКТЮРН</h2>
+
+    <div class="player">
+
+      <div class="vinyl-area">
+        <div class="vinyl" id="vinyl">
+          <div class="vinyl-label">Х</div>
+          <div class="vinyl-hole"></div>
+        </div>
+      </div>
+
+      <div class="player-info">
+
+        <p class="track-number" id="trackNumber">01 / TRACK</p>
+
+        <h3 id="trackName">НОКТЮРН</h3>
+
+        <p class="track-desc" id="trackDesc">
+          НОКТЮРН
+        </p>
+
+        <button class="play-btn" id="playBtn" type="button">
+          ▶
+        </button>
+
+        <audio id="audio" controls>
+          <source src="music/track1.mp3" type="audio/mpeg">
+          Твой браузер не поддерживает аудио.
+        </audio>
+
+      </div>
+    </div>
+
+    <div class="tracks">
+
+      <button
+        class="track active"
+        data-track="music/track1.mp3"
+        data-name="НОКТЮРН"
+        data-desc="НОКТЮРН"
+        type="button"
+      >
+        01 — НОКТЮРН
+      </button>
+
+      <button
+        class="track"
+        data-track="music/track2.mp3"
+        data-name="ВЕТРОМ СНЕГОМ ЗНОЕМ"
+        data-desc="ВЕТРОМ • СНЕГОМ • ЗНОЕМ"
+        type="button"
+      >
+        02 — ВЕТРОМ СНЕГОМ ЗНОЕМ
+      </button>
+
+      <button
+        class="track"
+        data-track="music/track3.mp3"
+        data-name="ПУЛЯ-ДУРА"
+        data-desc="ПУЛЯ-ДУРА"
+        type="button"
+      >
+        03 — ПУЛЯ-ДУРА
+      </button>
+
+      <button
+        class="track"
+        data-track="music/track4.mp3"
+        data-name="БИТ ШАТАЕТ ГОЛОВУ"
+        data-desc="БИТ • ШАТАЕТ • ГОЛОВУ"
+        type="button"
+      >
+        04 — БИТ ШАТАЕТ ГОЛОВУ
+      </button>
+
+    </div>
+
+  </div>
+</section>
+    <!-- ================= ФИЛЬМ ================= -->
+
+    <section class="section film" id="film">
+
+      <div class="section-number">
+        03
+      </div>
+
+      <div class="section-content">
+
+        <p class="eyebrow">
+          ФИЛЬМ
+        </p>
+
+        <h2>
+          КОММЕРСАНТ
+        </h2>
+
+
+        <div class="film-grid">
+
+          <!-- ФОТО -->
+
+          <div class="film-photo">
+
+            <img
+              src="images/film-photo.jpg"
+              alt="Фото для раздела фильма"
+            >
+
+          </div>
+
+
+          <!-- ТЕКСТ -->
+
+          <div class="film-text">
+
+            <p class="film-year">
+              ФИЛЬМ / КИНО
+            </p>
+
+            <p>
+             «Коммерсант» — криминальная драма, в которой Хаски раскрывается не только как музыкант, но и как актёр. Фильм погружает зрителя в мрачную атмосферу, где сталкиваются деньги, власть, риск и человеческие отношения. Образ Хаски органично вписывается в суровый мир истории, подчёркивая его необычную манеру и характер.
+            </p>
+
+            <a
+    href="https://www.kinopoisk.ru/film/7421341/video/210552/?utm_referrer=www.bing.com"
+    target="_blank"
+    class="line-btn"
+>
+    СМОТРЕТЬ ТРЕЙЛЕР →
+</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ГАЛЕРЕЯ ================= -->
+
+    <section class="section gallery" id="gallery">
+
+      <div class="section-number">
+        04
+      </div>
+
+      <div class="section-content">
+
+        <p class="eyebrow">
+          ФОТОГРАФИИ
+        </p>
+
+        <h2>
+          ГАЛЕРЕЯ
+        </h2>
+
+
+        <div class="gallery-grid">
+
+          <img
+            src="images/husky-start.jpg"
+            alt="Хаски"
+          >
+
+          <div class="gallery-placeholder">
+            ФОТО 02
+          </div>
+
+          <div class="gallery-placeholder">
+            ФОТО 03
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================= ПОДВАЛ ================= -->
+
+    <footer>
+
+      <span>
+        ХАСКИ
+      </span>
+
+      <span>
+        © 2026
+      </span>
+
+    </footer>
+
+  </main>
+
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script src="script.js"></script>
+
+</body>
+</html>
